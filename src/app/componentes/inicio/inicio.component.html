@@ -1,0 +1,101 @@
+
+<div class="row justify-content-center align-items-center g-2">
+    <div style="width: 99%;">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === activeIndex }">
+                <img src="{{ image }}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" (click)="prevImage()">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" (click)="nextImage()">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div style="width: 1%;">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="whatsapp-icon botonIconos " data-title="Escríbenos" (click)="redireccionarWhatsApp()" ><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn botonIconos" data-title="Agenda una Cita" href="agendarCita" ><i class="fas fa-calendar-plus"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn botonIconos" data-title="Llega con Google Maps" (click)="redireccionarAMaps()"> <i class="fas fa-map-marked-alt"></i></a>
+            </li>
+          </ul>
+    </div>
+</div>
+
+<div class="mt-4">
+  <div class="bienvenida">
+    <div class="text-center">
+      <label class="text-center mt-4"> Enamorate de cuidarte </label> <br>
+    </div>
+    <div class="text-center mt-2">
+      <label class="text-center"> Bienvenidos a <label class="degradarPalabra">BONITA</label> Alta peluquería </label>
+    </div>
+  </div>
+</div>
+
+
+<div class="contenedor mt-4">
+  <a href="damas" class="boton-imagen mt-4">
+    <img src="assets/img/dama3.png" alt="">
+    <span class="texto-superpuesto bienvenida "><b>DAMAS</b></span>
+  </a>
+
+  <a href="caballeros" class="boton-imagen mt-4">
+    <img src="assets/img/hombre1.png" alt="">
+    <span class="texto-superpuesto bienvenida"> <B>CABALLEROS</B> </span>
+  </a>
+
+  <a href="extras" class="boton-imagen mt-4">
+    <img src="assets/img/unas2.png" alt="">
+    <span class="texto-superpuesto bienvenida">  <B>UÑAS Y MAQUILLAJE</B></span>
+  </a>
+</div>
+<br>
+<div class="mt-4 text-center">
+  <label class="bienvenida mt-2 degradarPalabra">Diseños Personalizados al gusto del cliente</label>
+  <label class="letraMediana">Un poco de nuestro trabajo</label>
+  <div class="row mt-4 ">
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/img/unas3.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/maquillaje.jpeg" class="card-img-top" alt="...">
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/cabello.jpg" class="card-img-top" alt="...">
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+<div class="contenedorFoto mt-4 boton-imagen2 text-center">
+  <img src="assets/img/bannerInstalacion.png" alt="">
+  <span class="texto-superpuesto2 bienvenida "> <b>TENEMOS AMPLIAS INSTALACIONES PARA SU COMODIDAD</b></span>
+</div>
+
+
+
+
+
+
+  
+
+
+
+
+

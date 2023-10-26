@@ -1,0 +1,63 @@
+<div class="row justify-content-center align-items-center g-2">
+    <div style="width: 99%;">
+        <img src="assets/img/damaBaner.png" alt="Damas" width="90%">
+    </div>
+    <div style="width: 1%;">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="whatsapp-icon botonIconos " data-title="Escríbenos" (click)="redireccionarWhatsApp()" ><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn botonIconos" data-title="Agenda una Cita" href="agendarCita" ><i class="fas fa-calendar-plus"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn botonIconos" data-title="Llega con Google Maps" (click)="redireccionarAMaps()"> <i class="fas fa-map-marked-alt"></i></a>
+            </li>
+          </ul>
+    </div>
+</div>
+
+
+
+<div class="bodyDamas text-center text-white">
+   
+
+    <h1 class="mt-4 degradarPalabra">SERVICIOS</h1>
+    <br><br>
+    <div class="row">
+        <div class="col-md-2 col-sm-4 col-6">
+            <a class="animated-button d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" 
+            routerLink="/damas/lavado" routerLinkActive="active-link"><b>LAVADO</b></a>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6">
+            <a class="animated-button d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" 
+            routerLink="/damas/peinados" routerLinkActive="active-link"><b>PEINADOS</b></a>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6">
+            <a class="animated-button d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" 
+            routerLink="/damas/cortes" routerLinkActive="active-link"><b>CORTES</b></a>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6">
+            <a class="animated-button d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" 
+            routerLink="/damas/coloracion" routerLinkActive="active-link"> <b>COLORACIÓN</b></a>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6">
+            <a class="animated-button d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" 
+            routerLink="/damas/tratamientos" routerLinkActive="active-link"> <b>TRATAMIENTOS</b></a>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6">
+            <a class="animated-button d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" 
+            routerLink="/damas/preciosDama" routerLinkActive="active-link"> <b>LISTA DE PRECIOS</b></a>
+        </div>
+    </div>
+    
+  
+
+    <main class=" mt-4">
+        <router-outlet></router-outlet>
+    </main>
+   
+
+</div>
+
+

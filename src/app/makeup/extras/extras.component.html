@@ -1,0 +1,41 @@
+<div class="row justify-content-center align-items-center g-2 mt-4">
+    <div style="width: 99%;">
+        <img src="assets/img/maquillaje1.png" alt="Damas" width="100%">
+    </div>
+    <div style="width: 1%;">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="whatsapp-icon botonIconos " data-title="Escríbenos" (click)="redireccionarWhatsApp()" ><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn botonIconos" data-title="Agenda una Cita" href="agendarCita" ><i class="fas fa-calendar-plus"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn botonIconos" data-title="Llega con Google Maps" (click)="redireccionarAMaps()"> <i class="fas fa-map-marked-alt"></i></a>
+            </li>
+          </ul>
+    </div>
+</div>
+
+<div class="bodyDamas text-center text-white">
+
+    <div class="row">
+        <div class="col-md-6 col-sm-4 col-6">
+            <a class="animated-button d-flex w-100 justify-content-center align-items-center focus-ring py-1 px-2 text-decoration-none border rounded-2" 
+            routerLink="/extras/manos" routerLinkActive="active-link"><b>UÑAS</b></a>
+        </div>
+        <div class="col-md-6 col-sm-4 col-6">
+            <a class="animated-button d-flex w-100 justify-content-center align-items-center focus-ring py-1 px-2 text-decoration-none border rounded-2" 
+            routerLink="/extras/maquillaje" routerLinkActive="active-link"><b>MAQUILLAJE</b></a>
+        </div>
+    </div>
+       
+    <main class=" mt-4">
+        <router-outlet></router-outlet>
+    </main>
+   
+
+</div>
+
+
+

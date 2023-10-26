@@ -1,0 +1,19 @@
+.textBlanco{
+    color:whitesmoke;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rounded-image {
+    border-radius: 2%;
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease; /* Agregar una transición suave */
+  }
+  
+  .hover-zoom:hover {
+    transform: scale(1.06); /* Escalar la imagen al 110% en el hover */
+  }
